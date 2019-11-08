@@ -4,78 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HW#3-CSS.Dovhal Oleksandr</title>
-    <meta name="description" content="some table">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW#3-CSS.Dovhal Oleksandr</title>   
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <h1>HW3-CSS</h1>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Date</th>
-        </tr>
+    <div>
+        <table class="table_1">
+            <tr>
+                <th class="column">Name
+                    <span class="triangle"></span>
+                </th>
+                <th>Date</th>
+            </tr>
 
-        <tr>
-            <td>FIle.pdf</td>
-            <td>3 mins ago</td>
-            <td></td>
-        </tr>
+            <tr>
+                <td>FIle.pdf</td>
+                <td class="date">3 mins ago</td>
+                <td class="gray_dots"></td>
+            </tr>
 
-        <tr>
-            <td>FIle.pdf</td>
-            <td>Yesterday</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>FIle.pdf</td>
-            <td>June 1st, 2019</td>
-            <td></td>
-        </tr>
-    </table>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Date</th>
-        </tr>
-        <tr>
-            <td>FIle.pdf</td>
-            <td>3 mins ago</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>FIle.pdf</td>
-            <td>Yesterday</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>FIle.pdf</td>
-            <td>June 1st, 2019</td>
-            <td></td>
-        </tr>
-    </table>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Date</th>
-        </tr>
-        <tr>
-            <td>FIle.pdf</td>
-            <td>3 mins ago</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>FIle.pdf</td>
-            <td>Yesterday</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>FIle.pdf</td>
-            <td>June 1st, 2019</td>
-            <td></td>
-        </tr>
-    </table>
+            <tr>
+                <td>FIle.pdf</td>
+                <td class="date">Yesterday</td>
+                <td class="gray_dots"></td>
+            </tr>
+            <tr>
+                <td>FIle.pdf</td>
+                <td class="date">June 1st, 2019</td>
+                <td class="gray_dots"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <table class="table_2">
+            <tr>
+                <th class="column checked_td" id="minus_check">
+                    <input type="checkbox" class="th_check" id="check_Name">
+                    <label for="check_Name">Name</label>
+                    <span class="triangle"></span>
+                </th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td class="td_checked">
+                    <input type="checkbox" class="td_check" id="check_File1">
+                    <label for="check_File1">FIle.pdf</label>
+                </td>
+                <td class="date">3 mins ago</td>
+                <td class="white_dots"></td>
+            </tr>
+            <tr>
+                <td class="td_checked">
+                    <input type="checkbox" class="td_check" id="check_File2">
+                    <label for="check_File2">FIle.pdf</label>
+                </td>
+                <td class="date">Yesterday</td>
+                <td class="white_dots"></td>
+            </tr>
+            <tr>
+                <td class="td_checked">
+                    <input type="checkbox" class="td_check" id="check_File3">
+                    <label for="check_File3">FIle.pdf</label>
+                </td>
+                <td class="date">June 1st, 2019</td>
+                <td class="white_dots"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <table class="table_3">
+            <tr>
+                <th class="column">Name
+                    <span class="triangle"></span>
+                </th>
+                <th>Date</th>
+                <th class="search">
+                    <input id="search" type="search" placeholder="Search" >
+                    <label for="search"></label>
+                    
+                </th>
+            </tr>
+            <tr>
+                <td class="inbox">FIle.pdf</td>
+                <td class="date">3 mins ago</td>
+                <td class="white_dots"></td>
+            </tr>
+            <tr>
+                <td class="inbox">FIle.pdf</td>
+                <td class="date">Yesterday</td>
+                <td class="white_dots"></td>
+            </tr>
+            <tr>
+                <td class="inbox">FIle.pdf</td>
+                <td class="date">June 1st, 2019</td>
+                <td class="white_dots"></td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 
 </html>

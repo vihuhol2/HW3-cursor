@@ -1,3 +1,173 @@
+* {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    text-align: left;
+}
+
 body {
-    background: #2c2c2c;
+    background: #333;
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+    margin: 50px;
+}
+
+table {
+    border-radius: 5px;
+    border-collapse: collapse;
+    box-shadow: 0 0 0 1px #777;
+    width: 60%;
+    text-align: left;
+    background-color: #333;
+    margin: 50px;
+}
+
+th.column {
+    width: 50%;
+
+}
+
+th {
+    font-weight: 500;
+    height: 40px;
+    padding: 0 15px;
+    width: 25%;
+}
+
+td {
+    height: 45px;
+    padding: 0 15px;
+    border-top: 1px solid #777;
+    vertical-align: middle;
+}
+
+.date {
+    color: #777;
+}
+
+.triangle {
+    border: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+.inbox::before {
+    background-image: url('inbox1.svg');
+    background-size: 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    content: "";
+    vertical-align: middle;
+}
+
+.search {
+    position: relative;
+}
+
+#search:focus {
+    outline: none;
+    background-color: #555;
+}
+
+#search {
+    height: 3px;
+    width: 107%;
+    font-weight: 700;
+    background-color: #444;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px 0px 15px 35px;
+}
+
+#search + label::before {
+    background-image: url('search.svg');
+    background-size: 12px;
+    content: '';
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    outline: none;
+    cursor: text;
+}
+
+.dots::after {
+    float: right;
+    content: '...';
+    font-size: 20px;
+    color: #777;
+}
+
+.gray_dots::after {
+    float: right;
+    content: '...';
+    font-size: 20px;
+    color: #777
+}
+
+.white_dots::after {
+    float: right;
+    content: '...';
+    font-size: 20px;
+    color: #fff;
+}
+
+.td_checked < label {
+    cursor: pointer;
+    position: relative;
+    left: 25px;
+    margin-right: 25px;
+}
+
+.td_checked < label {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: absolute;
+    left: -25px;
+}
+
+.td_checked input[type="checkbox"]:checked + label {
+    display: inline-block;
+    border-color: #00a9ff;
+    content: '✔';
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+#minus_check input[type="checkbox"]:checked + label {
+    
+    border-color: #00a9ff;
+    content: '\2212';
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+.th_check {
+    display: inline-block;
+}
+
+.th_check label {
+    border-radius: 3px;
+}
+
+.td_check {
+   display: inline-block;
 }
